@@ -32,37 +32,6 @@ Useful for analyzing business performance and customer trends.
 
 **MySQL WorkBench Database**    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <img width="1200" height="798" alt="image" src="https://github.com/user-attachments/assets/20a37bda-0970-43ac-b5cb-3fdec233ca2b" />
 
 
