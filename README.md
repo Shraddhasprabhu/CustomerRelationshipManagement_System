@@ -132,8 +132,14 @@ JUnit & Integration Testing in Eclipse
   <img width="1237" height="738" alt="image" src="https://github.com/user-attachments/assets/5653f352-0494-4c6a-acf9-40894454fb6f" />
 
 
+
 - Test Reports:  
   After running tests, results appear in Eclipse’s **JUnit tab** and detailed reports are generated.
 
- 
+
+ ## Project Repository  
+
+You can find the complete source code here:  
+[Customer Relationship Management System](https://github.com/Shraddhasprabhu/CustomerRelationshipManagement_System)
+
 
