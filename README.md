@@ -10,8 +10,7 @@ Represents an individual or organization that interacts with the business.
 Stores customer details such as name, email, phone number, address, and created date.
 Serves as the central entity, linked with sales, interactions, and reports.
 
-2. Sales
-
+2. Sales  
 Represents a transaction or purchase made by a customer.
 Contains information such as amount, date of sale, and product/service description.
 Linked to a specific customer to track revenue contribution.
