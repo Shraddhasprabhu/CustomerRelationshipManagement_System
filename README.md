@@ -4,6 +4,7 @@ The project is a CRM (Customer Relationship Management) system that manages cust
 The system includes reports to analyze customer activities, sales performance, and business insights.
 
 **Entities in the CRM System**
+
 1.Customer
 Represents an individual or organization that interacts with the business.
 Stores customer details such as name, email, phone number, address, and created date.
