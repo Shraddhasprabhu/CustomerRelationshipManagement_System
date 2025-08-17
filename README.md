@@ -3,7 +3,7 @@
 The project is a CRM (Customer Relationship Management) system that manages customers and their lifecycle data. It tracks interactions (emails, calls, meetings) and records sales linked to each customer.
 The system includes reports to analyze customer activities, sales performance, and business insights.
 
-# Entities in the CRM System
+**Entities in the CRM System**
 1.Customer
 Represents an individual or organization that interacts with the business.
 Stores customer details such as name, email, phone number, address, and created date.
