@@ -43,41 +43,54 @@ Useful for analyzing business performance and customer trends.
 Configured in `SecurityConfig` with **Spring Security + BCryptPasswordEncoder**.  
 Every request (except `/login`) requires authentication.
 
+<img width="1905" height="537" alt="image" src="https://github.com/user-attachments/assets/76cee615-8680-4bbf-a767-174f41f03d81" />
+
+
+Example Login Credentials:  
+For Comapny:
+username: admin
+password: admin123  
+For Customer:
+username: user
+password: user123
+
 **2. API Endpoints**
 
 ### Customers
 - **GET** `/customers` → Get all customers  
 - **POST** `/customers` → Create a new customer  
 - **PUT** `/customers/{id}` → Update a customer  
-- **DELETE** `/customers/{id}` → Delete a customer  
+- **DELETE** `/customers/{id}` → Delete a customer
+
+  <img width="1394" height="870" alt="image" src="https://github.com/user-attachments/assets/b7944222-fa03-4afb-b22c-cd8082e2f018" />
+
 
 ### Sales
 - **GET** `/sales` → Get all sales records  
 - **POST** `/sales` → Create a new sale  
 - **PUT** `/sales/{id}` → Update a sale record  
-- **DELETE** `/sales/{id}` → Delete a sale record  
+- **DELETE** `/sales/{id}` → Delete a sale record
+
+  <img width="1437" height="865" alt="image" src="https://github.com/user-attachments/assets/071be006-5a33-4bd0-a8e0-69bcc762e042" />
+
 
 ### Interactions
 - **GET** `/interactions` → Get all interactions  
 - **POST** `/interactions` → Log a new interaction  
 - **PUT** `/interactions/{id}` → Update an interaction  
-- **DELETE** `/interactions/{id}` → Delete an interaction  
+- **DELETE** `/interactions/{id}` → Delete an interaction
+
+  <img width="1436" height="903" alt="image" src="https://github.com/user-attachments/assets/1fd07970-4c87-4c8e-b899-b54240da8222" />
+
 
 ### Reports
 - **GET** `/reports` → Get all reports  
 - **POST** `/reports` → Generate a new report  
 - **PUT** `/reports/{id}` → Update a report  
-- **DELETE** `/reports/{id}` → Delete a report  
+- **DELETE** `/reports/{id}` → Delete a report
+
+  <img width="1417" height="552" alt="image" src="https://github.com/user-attachments/assets/510b7b8b-ada3-422f-87b9-873c5fd8f553" />
+
 
  
 
-
-## 📬 Example Requests
-
-### 1. Login
-```http
-POST http://localhost:8080/login
-{
-  "username": "root",
-  "password": "12345"
-}
