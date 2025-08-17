@@ -39,7 +39,7 @@ Useful for analyzing business performance and customer trends.
 
 # How Does it Works
 
-**1. Login/Aurthentication**  
+### **1. Login/Aurthentication**  
 Configured in `SecurityConfig` with **Spring Security + BCryptPasswordEncoder**.  
 Every request (except `/login`) requires authentication.
 
@@ -54,7 +54,7 @@ For Customer:
 username: user
 password: user123
 
-**2. API Endpoints**
+### **2. API Endpoints**
 
 ### Customers
 - **GET** `/customers` → Get all customers  
