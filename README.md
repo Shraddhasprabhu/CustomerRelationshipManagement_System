@@ -5,7 +5,7 @@ The system includes reports to analyze customer activities, sales performance, a
 
 **Entities in the CRM System**
 
-1.Customer
+1.Customer :
 Represents an individual or organization that interacts with the business.
 Stores customer details such as name, email, phone number, address, and created date.
 Serves as the central entity, linked with sales, interactions, and reports.
