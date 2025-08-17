@@ -36,6 +36,15 @@ Useful for analyzing business performance and customer trends.
 
 <img width="1200" height="798" alt="image" src="https://github.com/user-attachments/assets/20a37bda-0970-43ac-b5cb-3fdec233ca2b" />
 
+# Technologies Used  
+
+- **Java 17** – Core programming language  
+- **Spring Boot** – Backend framework for building RESTful services  
+- **Maven** – Dependency management and build tool  
+- **Spring Security** – Authentication and authorization  
+- **JUnit 4** – Unit and integration testing framework  
+- **Postman** – API testing tool (GET, POST, PUT, DELETE)  
+- **MySQL Database** – For development and production persistence  
 
 # How Does it Works
 
@@ -111,11 +120,17 @@ JUnit & Integration Testing in Eclipse
 
 - Run Unit Tests:  
   Right-click on the `src/test/java` folder (or a specific test class) → **Run As → JUnit Test**.  
-  This executes individual unit tests for services, controllers, and entities.  
+  This executes individual unit tests for services, controllers, and entities.
+
+   <img width="758" height="836" alt="image" src="https://github.com/user-attachments/assets/3ef13eeb-5bf6-4ddb-aa86-3c850256ac4e" />
+
 
 - Run Integration Tests:  
-  Right-click on the integration test class (e.g., `CrmIntegrationTest`) in `src/test/java/com.example.crm.integration` → **Run As → JUnit Test**.  
-  Integration tests will start the Spring context, perform end-to-end testing (CRUD APIs with authentication), and validate full workflows.  
+  Right-click on the integration test class (e.g., `CrmIntegrationTest`) in `src/test/java/com.example.crm.integration` → **Run As → Maven Test**.  
+  Integration tests will start the Spring context, perform end-to-end testing (CRUD APIs with authentication), and validate full workflows.
+
+  <img width="1237" height="738" alt="image" src="https://github.com/user-attachments/assets/5653f352-0494-4c6a-acf9-40894454fb6f" />
+
 
 - Test Reports:  
   After running tests, results appear in Eclipse’s **JUnit tab** and detailed reports are generated.
