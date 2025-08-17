@@ -1,0 +1,6 @@
+2025-08-17T11:49:44.876+05:30  INFO 11888 --- [CRM] [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-17T11:49:44.942+05:30  INFO 11888 --- [CRM] [RMI TCP Connection(29)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T11:49:44.960+05:30  INFO 11888 --- [CRM] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T11:49:44.975+05:30  INFO 11888 --- [CRM] [RMI TCP Connection(29)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T11:49:45.004+05:30  INFO 11888 --- [CRM] [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-17T11:49:45.030+05:30  INFO 11888 --- [CRM] [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

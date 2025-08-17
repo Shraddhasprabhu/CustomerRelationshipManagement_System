@@ -1,0 +1,6 @@
+2025-08-15T11:54:53.125+05:30  INFO 20028 --- [CRM] [RMI TCP Connection(14)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-15T11:54:53.142+05:30  INFO 20028 --- [CRM] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-15T11:54:53.149+05:30  INFO 20028 --- [CRM] [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T11:54:53.158+05:30  INFO 20028 --- [CRM] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T11:54:53.170+05:30  INFO 20028 --- [CRM] [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T16:59:06.182+05:30  INFO 27200 --- [CRM] [main] c.e.crm.integration.CrmIntegrationTest   : Starting CrmIntegrationTest using Java 21.0.7 with PID 27200 (started by Shraddha Prabhu in D:\CustomerProject\CRM)

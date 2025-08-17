@@ -1,0 +1,11 @@
+2025-08-17T09:51:13.986+05:30  WARN 7560 --- [CRM] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-17T09:51:13.998+05:30  INFO 7560 --- [CRM] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-17T09:51:15.088+05:30  INFO 12192 --- [CRM] [main] com.example.crm.CrmApplication           : Starting CrmApplication using Java 21.0.7 with PID 12192 (D:\CustomerProject\CRM\target\classes started by Shraddha Prabhu in D:\CustomerProject\CRM)
+2025-08-17T09:51:15.094+05:30  INFO 12192 --- [CRM] [main] com.example.crm.CrmApplication           : No active profile set, falling back to 1 default profile: "default"

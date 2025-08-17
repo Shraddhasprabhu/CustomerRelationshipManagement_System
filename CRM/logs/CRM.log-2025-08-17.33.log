@@ -1,0 +1,6 @@
+2025-08-17T09:51:17.641+05:30  INFO 12192 --- [CRM] [RMI TCP Connection(2)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T09:51:17.648+05:30  INFO 12192 --- [CRM] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-17T09:51:17.651+05:30  INFO 12192 --- [CRM] [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T09:51:17.653+05:30  INFO 12192 --- [CRM] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-17T09:51:17.658+05:30  INFO 12192 --- [CRM] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-17T09:51:25.131+05:30  INFO 26884 --- [CRM] [main] com.example.crm.CrmApplication           : Starting CrmApplication using Java 21.0.7 with PID 26884 (D:\CustomerProject\CRM\target\classes started by Shraddha Prabhu in D:\CustomerProject\CRM)

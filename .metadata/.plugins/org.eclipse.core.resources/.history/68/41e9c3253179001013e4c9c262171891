@@ -1,0 +1,6 @@
+2025-08-14T22:13:17.782+05:30  INFO 24676 --- [CRM] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:13:18.075+05:30  INFO 24676 --- [CRM] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:13:18.391+05:30  WARN 24676 --- [CRM] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:13:18.919+05:30  INFO 24676 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-14T22:13:18.931+05:30  INFO 24676 --- [CRM] [main] com.example.crm.CrmApplication           : Started CrmApplication in 4.397 seconds (process running for 5.009)
+2025-08-14T22:15:24.961+05:30  INFO 24676 --- [CRM] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'

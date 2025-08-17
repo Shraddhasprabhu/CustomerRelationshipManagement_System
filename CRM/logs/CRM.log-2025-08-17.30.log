@@ -1,0 +1,7 @@
+2025-08-17T09:51:15.993+05:30  INFO 12192 --- [CRM] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-17T09:51:16.021+05:30  INFO 12192 --- [CRM] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-17T09:51:16.043+05:30  INFO 12192 --- [CRM] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T09:51:16.198+05:30  INFO 12192 --- [CRM] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T09:51:16.216+05:30  INFO 12192 --- [CRM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-17T09:51:16.440+05:30  INFO 12192 --- [CRM] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@261a66b8
+2025-08-17T09:51:16.442+05:30  INFO 12192 --- [CRM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

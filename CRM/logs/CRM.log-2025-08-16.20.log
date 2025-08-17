@@ -1,0 +1,6 @@
+2025-08-16T20:28:45.191+05:30  INFO 25224 --- [CRM] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
+2025-08-16T20:28:45.685+05:30  INFO 25224 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-16T20:28:45.704+05:30  INFO 25224 --- [CRM] [main] com.example.crm.CrmApplication           : Started CrmApplication in 5.385 seconds (process running for 6.087)
+2025-08-16T20:35:35.272+05:30  WARN 25224 --- [CRM] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s328ms829µs500ns).
+2025-08-16T20:57:00.013+05:30  WARN 25224 --- [CRM] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m24s305ms986µs200ns).
+2025-08-16T21:04:33.235+05:30  INFO 25224 --- [CRM] [RMI TCP Connection(27)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.

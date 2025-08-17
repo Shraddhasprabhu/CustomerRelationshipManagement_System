@@ -1,0 +1,6 @@
+2025-08-17T09:31:51.504+05:30  INFO 15172 --- [CRM] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-17T09:31:51.512+05:30  INFO 15172 --- [CRM] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-17T09:31:51.530+05:30  INFO 15172 --- [CRM] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-17T09:48:23.593+05:30  INFO 20592 --- [CRM] [main] com.example.crm.CrmApplication           : Starting CrmApplication using Java 21.0.7 with PID 20592 (D:\CustomerProject\CRM\target\classes started by Shraddha Prabhu in D:\CustomerProject\CRM)
+2025-08-17T09:48:23.601+05:30  INFO 20592 --- [CRM] [main] com.example.crm.CrmApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T09:48:24.158+05:30  INFO 20592 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.

@@ -1,0 +1,5 @@
+2025-08-16T21:04:33.239+05:30  INFO 25224 --- [CRM] [RMI TCP Connection(27)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-16T21:04:33.248+05:30  INFO 25224 --- [CRM] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-16T21:04:33.253+05:30  INFO 25224 --- [CRM] [RMI TCP Connection(27)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-16T21:04:33.259+05:30  INFO 25224 --- [CRM] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-16T21:04:33.268+05:30  INFO 25224 --- [CRM] [RMI TCP Connection(27)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

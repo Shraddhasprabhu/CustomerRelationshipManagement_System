@@ -1,0 +1,51 @@
+package com.example.crm.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import com.example.crm.entities.Interactions;
+import com.example.crm.service.InteractionService;
+
+@RestController
+@RequestMapping("/interactions")
+public class InteractionsController {
+
+    @Autowired
+    private InteractionService interactionService;
+
+    // POST
+    @PostMapping
+    public Interactions addInteraction(@RequestBody Interaction interaction) {
+        return interactionService.addInteraction(interaction);
+    }
+
+    // GET all
+    @GetMapping
+    public List<Interactions> getAllInteractions() {
+        return interactionService.getAllInteractions();
+    }
+
+    // GET by ID
+    @GetMapping("/{id}")
+    public Interactions getInteractionById(@PathVariable Long id) {
+        Interactions interaction = interactionService.getInteractionById(id);
+        if (interaction == null) {
+            throw new RuntimeException("Interaction not found with ID: " + id);
+        }
+        return interaction;
+    }
+
+    // PUT
+    @PutMapping("/{id}")
+    public Interactions updateInteraction(@PathVariable Long id, @RequestBody Interaction interaction) {
+        return interactionService.updateInteraction(id, interaction);
+    }
+
+    // DELETE
+    @DeleteMapping("/{id}")
+    public void deleteInteraction(@PathVariable Long id) {
+        interactionService.deleteInteraction(id);
+    }
+}

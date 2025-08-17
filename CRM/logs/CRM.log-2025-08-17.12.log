@@ -1,0 +1,7 @@
+2025-08-17T09:28:02.121+05:30  INFO 15172 --- [CRM] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-17T09:28:02.174+05:30  INFO 15172 --- [CRM] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-17T09:28:02.456+05:30  INFO 15172 --- [CRM] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-17T09:28:02.486+05:30  INFO 15172 --- [CRM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-17T09:28:02.856+05:30  INFO 15172 --- [CRM] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73dbe25
+2025-08-17T09:28:02.862+05:30  INFO 15172 --- [CRM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-17T09:28:02.935+05:30  WARN 15172 --- [CRM] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)

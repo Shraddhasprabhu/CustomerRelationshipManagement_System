@@ -1,0 +1,142 @@
+package com.example.crm.integration;
+
+import com.example.crm.entities.Customer;
+import com.example.crm.entities.Customer;
+import com.example.crm.entities.Interactions;
+import com.example.crm.entities.Sales;
+import com.example.crm.entities.Report;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+
+@SpringBootTest
+@AutoConfigureMockMvc
+public class CrmIntegrationTest {
+
+	
+	@Autowired
+    private MockMvc mockMvc;
+
+    @Autowired
+    private ObjectMapper objectMapper;
+
+    @Test
+    void fullCrmWorkflowTest() throws Exception {
+
+        // ------------------------
+        // 1️⃣ CREATE CUSTOMERS
+        // ------------------------
+        Customer c1 = new Customer(null, "Shraddha Prabhu", "shraddha@example.com", "9876543210", "Pune", LocalDate.now());
+        Customer c2 = new Customer(null, "Sharika Kr", "sharika@example.com", "9123456780", "Bangalore", LocalDate.now());
+        Customer c3 = new Customer(null, "Swizal Janice", "swizal@example.com", "9988776655", "Delhi", LocalDate.now());
+
+        Long c1Id = createCustomerAndReturnId(c1);
+        Long c2Id = createCustomerAndReturnId(c2);
+        Long c3Id = createCustomerAndReturnId(c3);
+
+        // ------------------------
+        // 2️⃣ ADD INTERACTIONS
+        // ------------------------
+        Interactions i1 = new Interactions(null, "Email", "Introductory email sent", LocalDate.now(), null);
+        Interactions i2 = new Interactions(null, "Call", "Discussed pricing", LocalDate.now(), null);
+        Interactions i3 = new Interactions(null, "Meeting", "Product demo done", LocalDate.now(), null);
+
+        createInteraction(c1Id, i1);
+        createInteraction(c2Id, i2);
+        createInteraction(c3Id, i3);
+
+        // ------------------------
+        // 3️⃣ RECORD SALES
+        // ------------------------
+        Sales s1 = new Sales(null, new BigDecimal("1200.00"), LocalDate.now(), "CRM Subscription", null);
+        Sales s2 = new Sales(null, new BigDecimal("2500.50"), LocalDate.now(), "Premium Package", null);
+        Sales s3 = new Sales(null, new BigDecimal("500.00"), LocalDate.now(), "Training Session", null);
+
+        createSale(c1Id, s1);
+        createSale(c2Id, s2);
+        createSale(c3Id, s3);
+
+        // ------------------------
+        // 4️⃣ GENERATE REPORTS
+        // ------------------------
+        Report r1 = new Report(null, "Sales Report - Shraddha", "Summary of Shraddha's sales", LocalDate.now());
+        Report r2 = new Report(null, "Sales Report - Sharika", "Summary of Sharika's sales", LocalDate.now());
+        Report r3 = new Report(null, "Sales Report - Swizal", "Summary of Swizal's sales", LocalDate.now());
+
+        createReport(r1);
+        createReport(r2);
+        createReport(r3);
+
+        // ------------------------
+        // 5️⃣ VERIFY COUNTS
+        // ------------------------
+        mockMvc.perform(get("/customers"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(3));
+
+        mockMvc.perform(get("/interactions"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(3));
+
+        mockMvc.perform(get("/sales"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(3));
+
+        mockMvc.perform(get("/reports"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(3));
+    }
+
+    // ------------------------
+    // HELPER METHODS
+    // ------------------------
+
+    private Long createCustomerAndReturnId(Customer customer) throws Exception {
+        MvcResult result = mockMvc.perform(post("/customers")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(customer)))
+                .andExpect(status().isOk())
+                .andReturn();
+
+        Customer saved = objectMapper.readValue(result.getResponse().getContentAsString(), Customer.class);
+        assertThat(saved.getId()).isNotNull();
+        return saved.getId();
+    }
+
+    private void createInteraction(Long customerId, Interactions interaction) throws Exception {
+        interaction.setCustomer(new Customer(customerId, null, null, null, null, null));
+        mockMvc.perform(post("/interactions")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(interaction)))
+                .andExpect(status().isOk());
+    }
+
+    private void createSale(Long customerId, Sales sale) throws Exception {
+        sale.setCustomer(new Customer(customerId, null, null, null, null, null));
+        mockMvc.perform(post("/sales")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(sale)))
+                .andExpect(status().isOk());
+    }
+
+    private void createReport(Report report) throws Exception {
+        mockMvc.perform(post("/reports")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(report)))
+                .andExpect(status().isOk());
+    }
+}
+}

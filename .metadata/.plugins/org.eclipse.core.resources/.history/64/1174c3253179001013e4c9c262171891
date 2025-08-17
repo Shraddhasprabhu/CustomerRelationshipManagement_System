@@ -1,0 +1,6 @@
+2025-08-14T22:09:41.954+05:30  INFO 20400 --- [CRM] [main] com.example.crm.CrmApplication           : Starting CrmApplication using Java 21.0.7 with PID 20400 (D:\CustomerProject\CRM\target\classes started by Shraddha Prabhu in D:\CustomerProject\CRM)
+2025-08-14T22:09:41.958+05:30  INFO 20400 --- [CRM] [main] com.example.crm.CrmApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:09:42.891+05:30  INFO 20400 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:09:42.947+05:30  INFO 20400 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2025-08-14T22:09:43.358+05:30  INFO 20400 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-14T22:09:43.373+05:30  INFO 20400 --- [CRM] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]

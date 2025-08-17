@@ -1,0 +1,7 @@
+2025-08-16T15:53:12.432+05:30  INFO 15764 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-16T15:53:12.441+05:30  INFO 15764 --- [CRM] [main] com.example.crm.CrmApplication           : Started CrmApplication in 5.075 seconds (process running for 5.915)
+2025-08-16T15:54:41.101+05:30  INFO 15764 --- [CRM] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-16T15:54:41.102+05:30  INFO 15764 --- [CRM] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-16T15:54:41.103+05:30  INFO 15764 --- [CRM] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-16T15:58:31.150+05:30  INFO 15764 --- [CRM] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-16T15:58:31.154+05:30  INFO 15764 --- [CRM] [RMI TCP Connection(8)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete

@@ -1,0 +1,6 @@
+2025-08-14T22:02:30.840+05:30  INFO 25516 --- [CRM] [main] com.example.crm.CrmApplication           : Starting CrmApplication using Java 21.0.7 with PID 25516 (D:\CustomerProject\CRM\target\classes started by Shraddha Prabhu in D:\CustomerProject\CRM)
+2025-08-14T22:02:30.842+05:30  INFO 25516 --- [CRM] [main] com.example.crm.CrmApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:02:31.612+05:30  INFO 25516 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:02:31.693+05:30  INFO 25516 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2025-08-14T22:02:32.143+05:30  INFO 25516 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-14T22:02:32.166+05:30  INFO 25516 --- [CRM] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]

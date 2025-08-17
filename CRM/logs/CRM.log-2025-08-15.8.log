@@ -1,0 +1,6 @@
+2025-08-15T16:59:11.955+05:30  INFO 27200 --- [CRM] [main] c.e.crm.integration.CrmIntegrationTest   : Started CrmIntegrationTest in 6.374 seconds (process running for 9.766)
+2025-08-15T16:59:13.564+05:30  INFO 27200 --- [CRM] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T16:59:13.569+05:30  INFO 27200 --- [CRM] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T16:59:13.591+05:30  INFO 27200 --- [CRM] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T16:59:29.697+05:30  INFO 10328 --- [CRM] [main] com.example.crm.CrmApplication           : Starting CrmApplication using Java 21.0.7 with PID 10328 (D:\CustomerProject\CRM\target\classes started by Shraddha Prabhu in D:\CustomerProject\CRM)
+2025-08-15T16:59:29.703+05:30  INFO 10328 --- [CRM] [main] com.example.crm.CrmApplication           : No active profile set, falling back to 1 default profile: "default"

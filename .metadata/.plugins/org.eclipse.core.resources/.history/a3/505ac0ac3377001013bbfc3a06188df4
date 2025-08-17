@@ -1,0 +1,53 @@
+package com.example.crm.service;
+
+import com.example.crm.dao.InteractionRepository;
+import com.example.crm.entities.Interaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class InteractionService {
+
+    @Autowired
+    private InteractionRepository interactionRepository;
+
+    // Add new interaction
+    public Interaction addInteraction(Interaction interaction) {
+        return interactionRepository.save(interaction);
+    }
+
+    // Retrieve all interactions
+    public List<Interaction> getAllInteractions() {
+        return interactionRepository.findAll();
+    }
+
+    // Retrieve interaction by ID
+    public Interaction getInteractionById(Long id) {
+        Optional<Interaction> interaction = interactionRepository.findById(id);
+        return interaction.orElse(null);
+    }
+
+    // Update interaction
+    public Interaction updateInteraction(Long id, Interaction updatedInteraction) {
+        Optional<Interaction> existingInteractionOptional = interactionRepository.findById(id);
+        if (existingInteractionOptional.isPresent()) {
+            Interaction existingInteraction = existingInteractionOptional.get();
+            existingInteraction.setType(updatedInteraction.getType());
+            existingInteraction.setNotes(updatedInteraction.getNotes());
+            existingInteraction.setDate(updatedInteraction.getDate());
+            existingInteraction.setCustomer(updatedInteraction.getCustomer());
+            return interactionRepository.save(existingInteraction);
+        } else {
+            System.out.println("Interaction not found with ID: " + id);
+            return null;
+        }
+    }
+
+    // Delete interaction
+    public void deleteInteraction(Long id) {
+        interactionRepository.deleteById(id);
+    }
+}

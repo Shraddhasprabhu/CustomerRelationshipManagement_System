@@ -1,0 +1,31 @@
+package com.example.crm.service;
+
+import com.example.crm.entities.Customer;
+import com.example.crm.repositories.SalesRepository;
+import org.springframework.stereotype.Service;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
+@Service
+public class RepService {
+
+    private final SalesRepository salesRepository;
+
+    public ReportService(SalesRepository salesRepository) {
+        this.salesRepository = salesRepository;
+    }
+
+    public BigDecimal getTotalSalesBetween(LocalDate start, LocalDate end) {
+        return salesRepository.getTotalSalesBetween(start, end);
+    }
+
+    public List<Object[]> getTopCustomers(int limit) {
+        return salesRepository.getTopCustomers(limit);
+    }
+
+    public List<Object[]> getMonthlySalesTrend() {
+        return salesRepository.getMonthlySalesTrend();
+    }
+}

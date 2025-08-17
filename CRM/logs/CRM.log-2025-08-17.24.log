@@ -1,0 +1,6 @@
+2025-08-17T09:49:24.951+05:30  INFO 17064 --- [CRM] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
+2025-08-17T09:49:25.271+05:30  INFO 17064 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-17T09:49:25.278+05:30  INFO 17064 --- [CRM] [main] com.example.crm.CrmApplication           : Started CrmApplication in 2.823 seconds (process running for 3.2)
+2025-08-17T09:50:52.519+05:30  INFO 17064 --- [CRM] [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-17T09:50:52.522+05:30  INFO 17064 --- [CRM] [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-17T09:50:52.531+05:30  INFO 17064 --- [CRM] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

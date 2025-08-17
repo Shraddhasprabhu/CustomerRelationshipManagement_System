@@ -1,0 +1,6 @@
+2025-08-16T15:59:18.310+05:30  INFO 11776 --- [CRM] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-16T15:59:18.575+05:30  WARN 11776 --- [CRM] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-16T15:59:18.611+05:30  INFO 11776 --- [CRM] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
+2025-08-16T15:59:19.128+05:30  INFO 11776 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-16T15:59:19.144+05:30  INFO 11776 --- [CRM] [main] com.example.crm.CrmApplication           : Started CrmApplication in 3.958 seconds (process running for 4.532)
+2025-08-16T15:59:25.837+05:30  INFO 11776 --- [CRM] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'

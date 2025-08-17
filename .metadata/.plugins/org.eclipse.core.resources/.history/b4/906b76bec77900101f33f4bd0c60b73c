@@ -1,0 +1,22 @@
+package com.example.crm.repositories;
+
+import com.example.crm.entities.Sales;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
+public interface RepRepository extends JpaRepository<Sales, Long> {
+
+    @Query("SELECT SUM(s.amount) FROM Sales s WHERE s.saleDate BETWEEN :start AND :end")
+    BigDecimal getTotalSalesBetween(@Param("start") LocalDate start, @Param("end") LocalDate end);
+
+    @Query("SELECT s.customer.name, SUM(s.amount) as total FROM Sales s GROUP BY s.customer.name ORDER BY total DESC")
+    List<Object[]> getTopCustomers(@Param("limit") int limit);
+
+    @Query("SELECT FUNCTION('MONTH', s.saleDate), SUM(s.amount) FROM Sales s GROUP BY FUNCTION('MONTH', s.saleDate) ORDER BY FUNCTION('MONTH', s.saleDate)")
+    List<Object[]> getMonthlySalesTrend();
+}

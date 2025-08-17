@@ -1,0 +1,37 @@
+2025-08-15T17:06:05.494+05:30  INFO 15232 --- [CRM] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T17:06:05.687+05:30  WARN 15232 --- [CRM] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T17:06:05.981+05:30  INFO 15232 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-15T17:06:06.016+05:30  INFO 15232 --- [CRM] [main] com.example.crm.CrmApplication           : Started CrmApplication in 3.598 seconds (process running for 4.235)
+2025-08-15T17:07:44.568+05:30  INFO 19296 --- [CRM] [main] c.e.crm.integration.CrmIntegrationTest   : Starting CrmIntegrationTest using Java 21.0.7 with PID 19296 (started by Shraddha Prabhu in D:\CustomerProject\CRM)
+2025-08-15T17:07:44.569+05:30  INFO 19296 --- [CRM] [main] c.e.crm.integration.CrmIntegrationTest   : No active profile set, falling back to 1 default profile: "default"
+2025-08-15T17:07:45.386+05:30  INFO 19296 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-15T17:07:45.476+05:30  INFO 19296 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2025-08-15T17:07:46.080+05:30  INFO 19296 --- [CRM] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-15T17:07:46.180+05:30  INFO 19296 --- [CRM] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-15T17:07:46.253+05:30  INFO 19296 --- [CRM] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-15T17:07:46.466+05:30  INFO 19296 --- [CRM] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-15T17:07:46.522+05:30  INFO 19296 --- [CRM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-15T17:07:47.012+05:30  INFO 19296 --- [CRM] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63ed5dae
+2025-08-15T17:07:47.018+05:30  INFO 19296 --- [CRM] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-15T17:07:47.093+05:30  WARN 19296 --- [CRM] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-15T17:07:47.096+05:30  WARN 19296 --- [CRM] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-15T17:07:47.137+05:30  INFO 19296 --- [CRM] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-15T17:07:48.044+05:30  INFO 19296 --- [CRM] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T17:07:48.186+05:30  INFO 19296 --- [CRM] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T17:07:48.697+05:30  WARN 19296 --- [CRM] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T17:07:49.318+05:30  INFO 19296 --- [CRM] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-15T17:07:49.319+05:30  INFO 19296 --- [CRM] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-15T17:07:49.321+05:30  INFO 19296 --- [CRM] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-08-15T17:07:49.365+05:30  INFO 19296 --- [CRM] [main] c.e.crm.integration.CrmIntegrationTest   : Started CrmIntegrationTest in 5.302 seconds (process running for 9.052)
+2025-08-15T17:07:50.603+05:30  INFO 19296 --- [CRM] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T17:07:50.614+05:30  INFO 19296 --- [CRM] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-15T17:07:50.648+05:30  INFO 19296 --- [CRM] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-15T17:09:02.221+05:30  INFO 15232 --- [CRM] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-15T17:09:02.221+05:30  INFO 15232 --- [CRM] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'

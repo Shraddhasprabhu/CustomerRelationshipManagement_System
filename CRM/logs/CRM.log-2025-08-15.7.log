@@ -1,0 +1,6 @@
+2025-08-15T16:59:10.536+05:30  INFO 27200 --- [CRM] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-15T16:59:10.650+05:30  INFO 27200 --- [CRM] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-15T16:59:11.225+05:30  WARN 27200 --- [CRM] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-15T16:59:11.909+05:30  INFO 27200 --- [CRM] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-08-15T16:59:11.910+05:30  INFO 27200 --- [CRM] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-15T16:59:11.913+05:30  INFO 27200 --- [CRM] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms

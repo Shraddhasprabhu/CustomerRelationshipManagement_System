@@ -1,0 +1,7 @@
+2025-08-14T22:34:40.346+05:30  INFO 4612 --- [CRM] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:34:40.423+05:30  INFO 4612 --- [CRM] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:34:40.424+05:30  INFO 4612 --- [CRM] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1407 ms
+2025-08-14T22:34:40.651+05:30  INFO 4612 --- [CRM] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:34:40.712+05:30  INFO 4612 --- [CRM] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-14T22:34:40.761+05:30  INFO 4612 --- [CRM] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:34:41.110+05:30  INFO 4612 --- [CRM] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer

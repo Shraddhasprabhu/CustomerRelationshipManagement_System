@@ -1,0 +1,7 @@
+2025-08-17T09:51:15.495+05:30  INFO 12192 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T09:51:15.541+05:30  INFO 12192 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2025-08-17T09:51:15.842+05:30  INFO 12192 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T09:51:15.852+05:30  INFO 12192 --- [CRM] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T09:51:15.852+05:30  INFO 12192 --- [CRM] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T09:51:15.891+05:30  INFO 12192 --- [CRM] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-17T09:51:15.891+05:30  INFO 12192 --- [CRM] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 752 ms

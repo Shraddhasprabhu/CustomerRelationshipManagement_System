@@ -1,0 +1,7 @@
+2025-08-17T09:51:36.427+05:30  INFO 14384 --- [CRM] [main] com.example.crm.CrmApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T09:51:36.859+05:30  INFO 14384 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-17T09:51:36.897+05:30  INFO 14384 --- [CRM] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 4 JPA repository interfaces.
+2025-08-17T09:51:37.215+05:30  INFO 14384 --- [CRM] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-17T09:51:37.225+05:30  INFO 14384 --- [CRM] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-17T09:51:37.230+05:30  INFO 14384 --- [CRM] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-17T09:51:37.267+05:30  INFO 14384 --- [CRM] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
