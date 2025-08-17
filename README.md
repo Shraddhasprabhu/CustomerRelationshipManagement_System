@@ -5,7 +5,7 @@ The system includes reports to analyze customer activities, sales performance, a
 
 # Overview  
 
-**Entities in the CRM System**
+### **Entities in the CRM System**
 
 **1. Customer**  
 Represents an individual or organization that interacts with the business.
@@ -27,12 +27,12 @@ Represents summaries and insights derived from customer, sales, and interaction 
 Contains details such as report title, description, and generation date.
 Useful for analyzing business performance and customer trends.
 
-**Directory Structure of the Project**    
+### **Directory Structure of the Project**    
 
 <img width="791" height="610" alt="image" src="https://github.com/user-attachments/assets/09bfb6ca-22d2-4447-bc02-a3eff5862549" />
 
 
-**MySQL WorkBench Database**      
+### **MySQL WorkBench Database**      
 
 <img width="1200" height="798" alt="image" src="https://github.com/user-attachments/assets/20a37bda-0970-43ac-b5cb-3fdec233ca2b" />
 
@@ -92,5 +92,20 @@ password: user123
   <img width="1417" height="552" alt="image" src="https://github.com/user-attachments/assets/510b7b8b-ada3-422f-87b9-873c5fd8f553" />
 
 
+
+# How to Run in Eclipse  
+### 1.Import Project   
+
+Eclipse → File → Import → Existing Maven Project → Select project folder.  
+### 2.Configure Database  
+
+Update application.properties with your database credentials (H2/MySQL).
+### 3.Run the Application    
+
+Right-click project → Run As → Spring Boot App.
+Open http://localhost:8080/login in browser.
+### 4.Testing via Postman  
+
+Send HTTP requests to endpoints, e.g.,put,post 
  
 
