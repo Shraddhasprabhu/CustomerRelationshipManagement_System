@@ -94,18 +94,31 @@ password: user123
 
 
 # How to Run in Eclipse  
-### 1.Import Project   
+### 1. Import Project   
 
 Eclipse → File → Import → Existing Maven Project → Select project folder.  
-### 2.Configure Database  
+### 2. Configure Database  
 
 Update application.properties with your database credentials (H2/MySQL).
-### 3.Run the Application    
+### 3. Run the Application    
 
 Right-click project → Run As → Spring Boot App.
 Open http://localhost:8080/login in browser.
-### 4.Testing via Postman  
+### 4. Testing via Postman  
 
-Send HTTP requests to endpoints, e.g.,put,post 
+Send HTTP requests to endpoints, e.g.,put,post  
+JUnit & Integration Testing in Eclipse  
+
+- Run Unit Tests:  
+  Right-click on the `src/test/java` folder (or a specific test class) → **Run As → JUnit Test**.  
+  This executes individual unit tests for services, controllers, and entities.  
+
+- Run Integration Tests:  
+  Right-click on the integration test class (e.g., `CrmIntegrationTest`) in `src/test/java/com.example.crm.integration` → **Run As → JUnit Test**.  
+  Integration tests will start the Spring context, perform end-to-end testing (CRUD APIs with authentication), and validate full workflows.  
+
+- Test Reports:  
+  After running tests, results appear in Eclipse’s **JUnit tab** and detailed reports are generated.
+
  
 
