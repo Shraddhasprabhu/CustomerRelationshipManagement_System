@@ -69,28 +69,7 @@ Every request (except `/login`) requires authentication.
 - **PUT** `/reports/{id}` → Update a report  
 - **DELETE** `/reports/{id}` → Delete a report  
 
-- **GET** `/customers` → Get all customers  
-- **POST** `/customers` → Create a new customer  
-- **PUT** `/customers/{id}` → Update a customer  
-- **DELETE** `/customers/{id}` → Delete a customer  
-
-### Sales
-- **GET** `/sales` → Get all sales records  
-- **POST** `/sales` → Create a new sale  
-- **PUT** `/sales/{id}` → Update a sale record  
-- **DELETE** `/sales/{id}` → Delete a sale record  
-
-### Interactions
-- **GET** `/interactions` → Get all interactions  
-- **POST** `/interactions` → Log a new interaction  
-- **PUT** `/interactions/{id}` → Update an interaction  
-- **DELETE** `/interactions/{id}` → Delete an interaction  
-
-### Reports
-- **GET** `/reports` → Get all reports  
-- **POST** `/reports` → Generate a new report  
-- **PUT** `/reports/{id}` → Update a report  
-- **DELETE** `/reports/{id}` → Delete a report  
+ 
 
 
 ## 📬 Example Requests
