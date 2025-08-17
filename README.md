@@ -24,3 +24,6 @@ Helps monitor customer relationship history and follow-ups.
 Represents summaries and insights derived from customer, sales, and interaction data.
 Contains details such as report title, description, and generation date.
 Useful for analyzing business performance and customer trends.
+
+<img width="791" height="810" alt="image" src="https://github.com/user-attachments/assets/09bfb6ca-22d2-4447-bc02-a3eff5862549" />
+
