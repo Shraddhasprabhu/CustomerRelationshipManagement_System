@@ -15,8 +15,7 @@ Represents a transaction or purchase made by a customer.
 Contains information such as amount, date of sale, and product/service description.
 Linked to a specific customer to track revenue contribution.
 
-3. Interactions
-
+3. Interactions  
 Represents any communication or engagement with a customer.
 Includes interaction type (call, meeting, email), description, and date.
 Helps monitor customer relationship history and follow-ups.
