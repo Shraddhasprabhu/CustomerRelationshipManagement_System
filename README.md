@@ -20,8 +20,7 @@ Represents any communication or engagement with a customer.
 Includes interaction type (call, meeting, email), description, and date.
 Helps monitor customer relationship history and follow-ups.
 
-4. Report
-
+4. Report  
 Represents summaries and insights derived from customer, sales, and interaction data.
 Contains details such as report title, description, and generation date.
 Useful for analyzing business performance and customer trends.
